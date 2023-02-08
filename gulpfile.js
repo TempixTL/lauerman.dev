@@ -1,18 +1,15 @@
-const { src, dest, series, parallel, watch } = require("gulp");
+const { src, dest, parallel, watch } = require("gulp");
 // util
 const sourcemaps = require("gulp-sourcemaps");
 const gulpif = require("gulp-if");
 // css
-const sass = require("sass");
-const gulpsass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 // img
 const responsive = require("gulp-responsive");
 const image = require("gulp-image");
-
-gulpsass.compiler = sass;
 
 const scripts = [
   "./node_modules/vanilla-tilt/dist/vanilla-tilt.min.js",
@@ -36,7 +33,7 @@ function css_postcss() {
 
   return src("./src/_scss/index.scss")
     .pipe(gulpif(dev_env, sourcemaps.init()))
-      .pipe(gulpsass(sassConfig))
+      .pipe(sass(sassConfig))
       .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(gulpif(dev_env, sourcemaps.write(".")))
     .pipe(dest("./dist/css/"));
