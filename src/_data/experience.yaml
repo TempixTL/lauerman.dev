@@ -1,3 +1,25 @@
+- title: Google Software Engineer, Android
+  img:
+    src: "/img/experience/google-logo.jpg"
+    alt: Google logo
+  employment_type: Full-time
+  company: Google Maps (Ads)
+  location: Mountain View, CA
+  start_date: July 2021
+  end_date: January 2023
+  responsibilities:
+    - Identified and implemented scalable solutions for the Google Maps user base
+    - Drove 3 projects from design to A/B testing to improve the ads experience on Maps
+    - Communicated complex decisions through design docs to cross-functional stakeholders
+    - Evaluated metrics for new features to discover areas of improvement and bugs
+  skills:
+    - java
+    - android
+    - mobile development
+    - scalability
+    - design docs
+    - xFN collaboration
+    - data analysis
 - title: ACM Head Tutor
   img:
     src: "/img/experience/trinity-logo.jpg"
@@ -6,11 +28,12 @@
   company: Trinity University
   location: San Antonio, TX
   start_date: January 2019
-  end_date: Present
+  end_date: May 2021
   responsibilities:
-    - Mentor freshman and sophomore students in foundational Computer Science concepts
+    - Mentored freshman and sophomore students in foundational Computer Science concepts
+    - Acted as Head Tutor (started Jan. 2020) including hiring and training 3 brand-new tutors
+    - Lead movement of tutoring program to a fully digital model as a result of COVID-19
     - Assist tutees in planning, coding, and debugging multifaceted software projects
-    - Act as Head Tutor (since January 2020), including hiring and training new tutors
   skills:
     - scala
     - c
