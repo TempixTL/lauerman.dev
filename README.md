@@ -4,7 +4,7 @@
         <source media="(prefers-color-scheme: dark)" srcset="src/img/logo.svg" width="80" height="80">
         <img src="src/img/logo-bg.svg" alt="logo" width="80" height="80">
     </picture>
-    <h2>lauerman.dev</h2>
+    <h3>lauerman.dev</h3>
     <h4><a href="https://lauerman.dev/">check out the full site ➡️</a></h4>
     <br/>
     <img src="https://img.shields.io/github/last-commit/tommylau-exe/lauerman.dev?style=for-the-badge"/>
@@ -14,6 +14,7 @@
 </div>
 
 # ℹ️ About the project
+
 lauerman.dev is my personal website where I showcase things like personal projects, work
 experience and my professional resume.
 
