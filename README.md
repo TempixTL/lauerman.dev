@@ -13,38 +13,38 @@
     <br/>
 </div>
 
-# About the project
+# ℹ️ About the project
 lauerman.dev is my personal website where I showcase things like personal projects, work
 experience and my professional resume.
 
 Because I believe in using the right tool for the right job, this site was built using a static
-site-generator (SSG) called [Eleventy (11ty)][1]. 11ty Excels at creating static content from
+site-generator (SSG) called [Eleventy (11ty)][1]. 11ty excels at creating static content from
 dynamic data, so I have all my work experience being pulled [from a `.yml` file][2] automatically.
 That way, I only need to update the backing data in the `.yml` file, and all the webpage content
 automatically changes!
 
 This is made possible by templates that 11ty uses. You can pick from a selection of templating
 languages to insert the dynamic data into an HTML page, and my choice was [Nunjucks][3]. It's
-simple, and is close to HTML, which means I have full control over the HTML tags that get output.
+simple and close to HTML, which means I have full control over the HTML tags that get output.
 It's just like writing normal HTML, with some extra header data and useful functionality inside
 curly braces (if statements, basic loops, etc.).
 
 Putting it all together is the Javascript build tool [Gulp.js][4]. Gulp is a super customizable and
 user-friendly tool that I use to minify files, optimize images, and put everything in the right
 spot for deployment. It has a vibrant community of plugins for doing a variety of tasks, like
-generating sourcemaps and autoprefixing css, which [I also make use of][5].
+generating source maps and auto-prefixing CSS, which [I also make use of][5].
 
-Finally, everything is hosted on the wonderful [GitHub Pages][6], using my custom domain name,
+Finally, everything is hosted on the wonderful [GitHub Pages][6], using my custom domain name
 [lauerman.dev](https://lauerman.dev). 🚀
 
-# Built with
+# 🛠️ Built with
 
 - [Eleventy][1]
 - [Nunjucks][3]
 - [Gulp.js][4]
 - [GitHub Pages][5]
 
-# License
+# 📃 License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
