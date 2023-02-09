@@ -13,7 +13,7 @@
     "prebuild-dev": "npm run clean",
     "build-dev": "eleventy && gulp build",
     "build": "cross-env NODE_ENV='production' npm run build-dev",
-    "predeploy": "npm run build && echo \"lauerman.dev\" > ./dist/CNAME",
+    "predeploy": "npm run build && echo lauerman.dev > ./dist/CNAME",
     "deploy": "gh-pages -d dist -b dist",
     "serve": "concurrently -n 11ty,gulp \"eleventy --serve\" \"gulp watch\"",
     "start": "npm run serve"
