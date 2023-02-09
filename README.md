@@ -1,8 +1,8 @@
 <div align="center">
     <picture>
-        <source media="(prefers-color-scheme: light)" srcset="src/img/logo-bg.svg" width="80" height="80">
-        <source media="(prefers-color-scheme: dark)" srcset="src/img/logo.svg" width="80" height="80">
-        <img src="src/img/logo-bg.svg" alt="logo" width="80" height="80">
+        <source media="(prefers-color-scheme: light)" srcset="https://lauerman.dev/img/logo-bg.svg" width="80" height="80">
+        <source media="(prefers-color-scheme: dark)" srcset="https://lauerman.dev/img/logo.svg" width="80" height="80">
+        <img src="https://lauerman.dev/img/logo-bg.svg" alt="logo" width="80" height="80">
     </picture>
     <h3>lauerman.dev</h3>
     <h4><a href="https://lauerman.dev/">check out the full site ➡️</a></h4>
