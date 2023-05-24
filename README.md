@@ -30,19 +30,17 @@ simple and close to HTML, which means I have full control over the HTML tags tha
 It's just like writing normal HTML, with some extra header data and useful functionality inside
 curly braces (if statements, basic loops, etc.).
 
-Putting it all together is the Javascript build tool [Gulp.js][4]. Gulp is a super customizable and
-user-friendly tool that I use to minify files, optimize images, and put everything in the right
-spot for deployment. It has a vibrant community of plugins for doing a variety of tasks, like
-generating source maps and auto-prefixing CSS, which [I also make use of][5].
+11ty also supports many features of common build tools like Gulp.js (which I previously used).
+In addition to its existing responsibilities, [I extended 11ty][4] to minify files, post-process (S)CSS,
+and move everything into the right place to prepare for deployment.
 
-Finally, everything is hosted on the wonderful [GitHub Pages][6], using my custom domain name
+Finally, everything is hosted on the wonderful [GitHub Pages][5], using my custom domain name
 [lauerman.dev](https://lauerman.dev). 🚀
 
 # 🛠️ Built with
 
 - [Eleventy][1]
 - [Nunjucks][3]
-- [Gulp.js][4]
 - [GitHub Pages][5]
 
 # 📃 License
@@ -52,6 +50,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [1]: https://www.11ty.dev/
 [2]: https://github.com/tommylau-exe/lauerman.dev/blob/main/src/_data/experience.yaml
 [3]: https://mozilla.github.io/nunjucks/
-[4]: https://gulpjs.com/
-[5]: https://github.com/tommylau-exe/lauerman.dev/blob/main/gulpfile.js
-[6]: https://pages.github.com
+[4]: https://github.com/tommylau-exe/lauerman.dev/blob/main/.eleventy.js
+[5]: https://pages.github.com
