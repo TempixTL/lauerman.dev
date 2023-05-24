@@ -6,8 +6,6 @@ const sass = require("sass");
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
-// img
-const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   // copy files
