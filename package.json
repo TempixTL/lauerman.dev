@@ -10,7 +10,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "eleventy",
+    "build": "npm run clean && eleventy",
     "predeploy": "npm run build && echo lauerman.dev > ./dist/CNAME",
     "deploy": "gh-pages -d dist -b dist",
     "start": "eleventy --serve"
