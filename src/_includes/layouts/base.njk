@@ -28,12 +28,14 @@
       {{ content | safe }}
     </div>
 
+    {% if not standalone %}
     <footer>
       <a href="https://github.com/tempixtl/lauerman.dev/blob/main/{{ page.inputPath }}">
         View this page on GitHub
       </a>
       <p>by Thomas Lauerman<p>
     </footer>
+    {% endif %}
 
     <script type="text/javascript" src="/js/vanilla-tilt.min.js"></script>
   </body>
