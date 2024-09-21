@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode }}" dir="{{ or .Site.Language.LanguageDirection `ltr` }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ with .Description }} 
+        <meta name="description" content="{{ . }}">
+    {{ end }}
+    {{ with resources.Get "main.css" | minify }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="mask-icon" type="image/svg+xml" href="safari-pinned-tab.svg" color="#000000">
+    <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="{{ .Site.Title }}">
+  </head>
+  <body>
+    <header>
+        <a href="{{ .Site.BaseURL }}" aria-label="Go to the home page" style="display: block; height: 3rem; width: 3rem;">
+            {{ partial "signature" }}
+        </a>
+    </header>
+    <main>
+        {{ block "main" . }}
+        {{ end }}
+    </main>
+    <footer>
+        <p>
+            <a href="{{ .Site.BaseURL }}/index.xml" aria-label="Go to the RSS feed">RSS</a>
+            |
+            <a href="https://github.com/tommylau-exe/lauerman.dev">Source</a>
+        </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+baseURL = 'https://lauerman.dev'
+languageCode = 'en-us'
+title = 'lauerman.dev'
+
+[outputs]
+home = ['html', 'rss']
+section = []
+taxonomy = []
+term = []
+
+[markup.highlight]
+noClasses = false
