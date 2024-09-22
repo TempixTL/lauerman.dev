@@ -1,5 +1,5 @@
 +++
-title = 'Hand-making an iOS app (part 1)'
+title = 'Hand-making an iOS App (part 1)'
 date = 2024-07-05 
 +++
 
@@ -79,8 +79,9 @@ iphonesimulator clang` and that will handle setting `-isysroot` for us.
 So, put it all together and the magic incantation would look something like...
 
 ``` sh
+#!/bin/sh
 # build.sh
-set -e
+set -ex
 
 mkdir -p handmade-ios.app
 xcrun -sdk iphonesimulator clang \
@@ -164,12 +165,12 @@ something like the following:
 ```sh
 #!/bin/sh
 # run-simulator.sh
-set -e
+set -ex
 
-IPHONE_15_SIM_ID="9340DADD-23AC-42E0-A6AF-BA720B728DD9"
-xcrun simctl bootstatus "$IPHONE_15_SIM_ID" -b > /dev/null
-xcrun simctl install "$IPHONE_15_SIM_ID" ./handmade-ios.app
-xcrun simctl launch --console "$IPHONE_15_SIM_ID" com.example.handmade-ios
+sim_id="9340DADD-23AC-42E0-A6AF-BA720B728DD9"
+xcrun simctl bootstatus $sim_id -b > /dev/null
+xcrun simctl install $sim_id ./handmade-ios.app
+xcrun simctl launch --console $sim_id com.example.handmade-ios
 ```
 
 With this, whenever you make changes you should be able to simply `./build.sh

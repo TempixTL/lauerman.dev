@@ -91,7 +91,7 @@ a:has(svg):hover {
 	font-size: .88rem;
 	line-height: 25px;
 	padding: 10px 14px;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 /* LineLink */ .chroma .lnlinks { outline:none;text-decoration:none;color:inherit }
