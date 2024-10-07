@@ -187,11 +187,14 @@ doesn't mean that our apps must be complex as well.
 
 ### Additional exercises
 
+For your reference, [here](https://github.com/tommylau-exe/handmade-ios/tree/part-1) is the source for the code you should have by the
+end of this tutorial.
+
 1. Show a UIKit component. [Solution][uikit-solution]
 2. Compile a Swift program rather than C or Objective-C. [Solution][swift-solution]
 3. Show a SwiftUI view. [Solution][swiftui-solution]
 
 [bundle]: https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html
-[uikit-solution]: https://github.com/tommylau-exe/handmade-ios/tree/uikit
-[swift-solution]: https://github.com/tommylau-exe/handmade-ios/tree/swift
-[swiftui-solution]: https://github.com/tommylau-exe/handmade-ios/tree/swiftui
+[uikit-solution]: https://github.com/tommylau-exe/handmade-ios/tree/part-1.uikit
+[swift-solution]: https://github.com/tommylau-exe/handmade-ios/tree/part-1.swift
+[swiftui-solution]: https://github.com/tommylau-exe/handmade-ios/tree/part-1.swiftui
